@@ -4,7 +4,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 const cors = require('cors');
-// const router = require('./formRoutes');
+ const router = require('./formRoutes');
 require('dotenv').config();
 
 // Initialize the Express app
@@ -38,7 +38,7 @@ db()
 
 
 // Use the form routes
-// app.use('/api', router);
+  app.use('/api', router);
 app.get('/', (req, res) => {
   res.send('Hello World')
 })
