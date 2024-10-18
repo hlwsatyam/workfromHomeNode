@@ -48,7 +48,7 @@ const App = {
         try {
             const { email, password } = req.body;
 
-            if (email === "1" && password === "1") {
+            if (email === "abc@gmail.com" && password === "1234") {
                 return res.status(200).json({ message: "Login Successful", token: "1234321" });
             }
             else {
